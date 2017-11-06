@@ -1,0 +1,17 @@
+﻿<app-nav-bar></app-nav-bar>
+ <div class="content-wrapper">
+    <div class="container-fluid">
+      <!-- Breadcrumbs-->
+      <ol class="breadcrumb">        
+        <li class="breadcrumb-item active">Dashboard</li>
+      </ol>
+      <div class="row">
+        <div class="col-12">
+          <h1>Dashboard</h1>
+          <p *ngFor="let user of users"> Welcome to <b>"{{user.firstName}} {{user.lastName}} ({{user.email}})"</b>
+              <a [routerLink]="['/login']">Logout</a>
+          </p>
+        </div>
+      </div>
+    </div>
+</div>
